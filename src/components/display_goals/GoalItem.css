@@ -1,0 +1,12 @@
+.goal-item {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goal-container {
+  background-color: cadetblue;
+}

@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Assignment2a from "./components/react-training/Assignment2a";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <MainScreen></MainScreen> */}
+      {/* <Assignment1a></Assignment1a> */}
+      <p className="container w-75 para my-3" style={{ fontSize: "1.5rem" }}>
+        The below Form takes 3 inputs and evertime the form is submitted
+        (created) the state is upadated and it is logged onto the console as an
+        object. Please open console.
+      </p>
+      <Assignment2a></Assignment2a>
     </div>
   );
 }

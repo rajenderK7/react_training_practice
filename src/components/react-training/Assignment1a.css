@@ -1,0 +1,14 @@
+.style {
+  text-align: center;
+  font-size: 2rem;
+  color: cadetblue;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.title {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  letter-spacing: 1px;
+}
