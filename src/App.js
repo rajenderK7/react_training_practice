@@ -20,8 +20,8 @@ function App() {
       <Assignment2a></Assignment2a> */}
       <nav className="navbar navbar-expand-lg navbar-light bg-info">
         <div className="container-fluid">
-          <Link className="nav-link text-white title" to="">
-            My Flutter
+          <Link className="nav-link text-white title fw-bold text-white" to="">
+            S E V E N
           </Link>
           <button
             className="navbar-toggler"
