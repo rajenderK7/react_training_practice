@@ -4,7 +4,10 @@ function Post(props) {
       <div className="row pt-2 px-2 justify-content-center">
         <div className="col-sm-12 col-md-4 col-lg-6">
           <div className="avatar pt-2 text-start">
-            <img className="image-fluid" src={props.avatar}></img>
+            <img
+              className="image-fluid mx-auto d-block"
+              src={props.avatar}
+            ></img>
           </div>
         </div>
         <div className="col-sm-12 col-md-8 col-lg-6 text-start pt-1">

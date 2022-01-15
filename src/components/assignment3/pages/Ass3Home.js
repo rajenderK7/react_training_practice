@@ -13,14 +13,13 @@ function Ass3Home() {
       </div>
       <div className="my-3">
         <img
-          className="imgLink rounded shadow border border-dark mx-2"
+          className="imgLink d-block mx-auto rounded shadow border border-dark mx-2"
           src={imgLink}
-          // style={{ width: "500px", height: "300px" }}
           alt="Nature.."
         ></img>
       </div>
       <div className="sub-title">
-        <h3 className="mb-3 text-primary">Rows and Columns</h3>
+        <h3 className="mb-3 text-primary">A brief introduction</h3>
       </div>
       <div>
         <div className="row mb-5 justify-content-center">
