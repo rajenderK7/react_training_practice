@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .imgLink {
     width: 300px;
     height: 100px;
