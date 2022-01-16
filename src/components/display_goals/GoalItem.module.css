@@ -1,4 +1,4 @@
-.goal-item {
+.goalItem {
   display: flex;
   flex-wrap: wrap;
   padding-left: 1rem;
@@ -7,6 +7,6 @@
   align-items: center;
 }
 
-.goal-container {
+.goalContainer {
   background-color: cadetblue;
 }

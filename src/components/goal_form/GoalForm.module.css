@@ -1,0 +1,20 @@
+.goalForm {
+  width: 400;
+  background-color: aquamarine;
+}
+
+.goalButton {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .goalButton {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .goalInput {
+    width: 100%;
+  }
+}
