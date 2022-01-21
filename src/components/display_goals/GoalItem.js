@@ -8,7 +8,7 @@ const GoalItem = (props) => {
     >
       <div className={styles.goalItem}>
         <h3 className="text-white p-2">{props.goalTitle}</h3>
-        <h1 className="">7</h1>
+        <h1 className="">{props.goalNumber}</h1>
       </div>
     </div>
   );

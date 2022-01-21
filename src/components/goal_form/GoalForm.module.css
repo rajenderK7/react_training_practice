@@ -13,6 +13,11 @@
   }
 }
 
+.goalError {
+  background-color: salmon;
+  border-color: red;
+}
+
 @media (max-width: 768px) {
   .goalInput {
     width: 100%;

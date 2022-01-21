@@ -6,18 +6,22 @@ let intialGoals = [
   {
     id: 1,
     goal: "Rajender",
+    num: "7",
   },
   {
     id: 2,
     goal: "Rajender",
+    num: "7",
   },
   {
     id: 3,
     goal: "Rajender",
+    num: "7",
   },
   {
     id: 4,
     goal: "Rajender",
+    num: "7",
   },
 ];
 

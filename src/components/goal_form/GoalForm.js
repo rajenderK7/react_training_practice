@@ -3,6 +3,7 @@ import styles from "./GoalForm.module.css";
 
 const GoalForm = (props) => {
   const [enteredGoal, setEnteredGoal] = useState("");
+  const [enteredNumber, setEnteredNumber] = useState("");
   const [isValid, setIsValid] = useState(true);
 
   const changeGoalHandler = (event) => {
@@ -10,37 +11,54 @@ const GoalForm = (props) => {
     setEnteredGoal(event.target.value);
   };
 
+  const onNumberChangedHandler = (event) => {
+    setIsValid(true);
+    setEnteredNumber(event.target.value);
+  };
+
   const formSubitHandler = (event) => {
     event.preventDefault();
-    if (enteredGoal.trim().length === 0) {
+    if (enteredGoal.trim().length === 0 || enteredNumber.trim().length === 0) {
       setIsValid(false);
       setEnteredGoal("");
+      setEnteredNumber("");
       return;
     }
     const newGoal = {
       id: Math.random() * 100,
       goal: enteredGoal,
+      num: enteredNumber,
     };
+    console.log(newGoal);
     props.getNewGoal(newGoal);
     setEnteredGoal("");
+    setEnteredNumber("");
   };
 
   return (
     <div
-      className={`container my-4 w-75 rounded border border-secondary shadow ${styles.goalForm}`}
+      className={`container my-4 w-75 rounded border border-secondary
+      } shadow ${styles.goalForm}`}
     >
       <form onSubmit={formSubitHandler}>
         <div className="p-2">
-          <label className={`row py-1 ${isValid ? "" : "text-danger"}`}>
-            Goal
-          </label>
+          <label className={`row py-1`}>Goal</label>
           <input
-            className={`row form-control border border-dark ${
-              isValid ? "" : "bg-danger"
-            } ${styles.goalInput}`}
+            className={`row form-control border ${
+              !isValid ? "border-danger" : "border-secondary"
+            } ${isValid ? "" : styles.goalError} ${styles.goalInput}`}
             type="text"
             onChange={changeGoalHandler}
             value={enteredGoal}
+          ></input>
+          <label className="form-label text-left row">Number</label>
+          <input
+            type="number"
+            className={`form-control ${styles.goalInput} ${
+              !isValid ? styles.goalError : ""
+            }`}
+            onChange={onNumberChangedHandler}
+            value={enteredNumber}
           ></input>
         </div>
         <button
