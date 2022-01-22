@@ -29,12 +29,10 @@ const GoalForm = (props) => {
       goal: enteredGoal,
       num: enteredNumber,
     };
-    console.log(newGoal);
     props.getNewGoal(newGoal);
     setEnteredGoal("");
     setEnteredNumber("");
   };
-
   return (
     <div
       className={`container my-4 w-75 rounded border border-secondary

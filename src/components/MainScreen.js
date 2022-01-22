@@ -10,17 +10,17 @@ let intialGoals = [
   },
   {
     id: 2,
-    goal: "Rajender",
-    num: "7",
+    goal: "Virat Kohli",
+    num: "18",
   },
   {
     id: 3,
-    goal: "Rajender",
-    num: "7",
+    goal: "Lionel Messi",
+    num: "10",
   },
   {
     id: 4,
-    goal: "Rajender",
+    goal: "Zendaya",
     num: "7",
   },
 ];
@@ -34,10 +34,18 @@ const MainScreen = () => {
     });
   };
 
+  const deleteItem = (id) => {
+    const updatedGoals = currentGoals.filter((goal) => {
+      return goal.id !== id;
+    });
+
+    setCurrenGoals([...updatedGoals]);
+  };
+
   return (
     <div className="mx-auto w-75">
       <GoalForm getNewGoal={getNewGoal}></GoalForm>
-      <GoalsDisplay goals={currentGoals}></GoalsDisplay>
+      <GoalsDisplay deleteItem={deleteItem} goals={currentGoals}></GoalsDisplay>
     </div>
   );
 };
