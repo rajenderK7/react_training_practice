@@ -18,7 +18,7 @@ function App() {
         object. Please open console.
       </p>
       <Assignment2a></Assignment2a> */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-info">
+      <nav className="navbar navbar-expand-lg navbar-light bg-info ms-auto">
         <div className="container-fluid">
           <Link className="nav-link text-white title fw-bold text-white" to="">
             S E V E N
