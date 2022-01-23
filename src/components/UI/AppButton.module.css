@@ -1,0 +1,9 @@
+.appButton {
+  background-color: aquamarine;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 2px 3px rgba(128, 128, 128, 0.2);
+  padding: auto;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}

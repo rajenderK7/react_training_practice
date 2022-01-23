@@ -1,17 +1,35 @@
 import "./App.css";
-import MainScreen from "./components/MainScreen";
+import TodoList from "./components/User/ToDo";
+import UserForm from "./components/User/UserForm";
+
+const todos = [
+  {
+    id: 1,
+    todo: "Rajender",
+    priority: 7,
+  },
+  {
+    id: 2,
+    todo: "Rajender",
+    priority: 7,
+  },
+  {
+    id: 3,
+    todo: "Rajender",
+    priority: 7,
+  },
+  {
+    id: 4,
+    todo: "Rajender",
+    priority: 7,
+  },
+];
 
 function App() {
   return (
     <div className="App">
-      <MainScreen></MainScreen>
-      {/* <Assignment1a></Assignment1a> */}
-      {/* <p className="container w-75 para my-3" style={{ fontSize: "1.5rem" }}>
-        The below Form takes 3 inputs and evertime the form is submitted
-        (created) the state is upadated and it is logged onto the console as an
-        object. Please open console.
-      </p>
-      <Assignment2a></Assignment2a> */}
+      <UserForm />
+      <TodoList todos={todos}></TodoList>
     </div>
   );
 }
