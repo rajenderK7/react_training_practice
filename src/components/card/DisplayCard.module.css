@@ -1,0 +1,8 @@
+.display-card {
+  display: grid;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 3px 3px 5px darkgray;
+  border-radius: 12px;
+  padding: 10px;
+}
