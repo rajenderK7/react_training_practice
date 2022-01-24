@@ -1,6 +1,6 @@
 import "./App.css";
-import TodoList from "./components/User/ToDo";
-import UserForm from "./components/User/UserForm";
+import TodoList from "./components/TodoComps/ToDoList";
+import TodoForm from "./components/TodoComps/TodoForm";
 
 const todos = [
   {
@@ -28,7 +28,7 @@ const todos = [
 function App() {
   return (
     <div className="App">
-      <UserForm />
+      <TodoForm />
       <TodoList todos={todos}></TodoList>
     </div>
   );

@@ -1,0 +1,6 @@
+.todoList {
+  margin: auto;
+  width: 600px;
+  list-style-type: none;
+  padding: 1rem;
+}
