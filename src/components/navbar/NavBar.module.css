@@ -1,4 +1,17 @@
 .nav-belt {
+  display: flex;
   background-color: #232f3e;
   height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  /* position: sticky;
+  top: 0; */
+}
+
+.nav-belt h3 {
+  color: #ffa41c;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  letter-spacing: 1px;
 }

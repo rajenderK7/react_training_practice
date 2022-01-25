@@ -1,13 +1,21 @@
+import AppButton from "./AppButton";
+import BuyNow from "./BuyNow";
 import styles from "./DisplayCard.module.css";
+import GetIt from "./GetIt";
+import Price from "./Price";
 
-const DisplayCard = () => {
+const DisplayCard = (props) => {
   return (
     <div className={styles["display-card"]}>
-      <img
-        src="https://images-eu.ssl-images-amazon.com/images/I/41jr5nrfFoL._SX300_SY300_QL70_FMwebp_.jpg"
-        alt="loading"
-      />
-      <h1>Rajender</h1>
+      <img src={props.link} alt="loading" />
+      <div className={styles["item-info"]}>
+        <p className="m-0">Sponsored </p>
+        <h2 className={styles["item-title"]}>{props.title}</h2>
+        <AppButton text="Limited time deal Deal"></AppButton>
+        <Price price={props.price}></Price>
+        <GetIt></GetIt>
+        <BuyNow></BuyNow>
+      </div>
     </div>
   );
 };

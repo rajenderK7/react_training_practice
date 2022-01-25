@@ -1,0 +1,9 @@
+.app-button {
+  min-width: 100px;
+  background-color: #b12704;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding: 4px;
+  border: none;
+}
