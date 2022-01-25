@@ -23,7 +23,7 @@ function UserForm(props) {
       email: newUser.email,
       gender: newUser.gender,
       skill: `${
-        newUser.skill.length > 1
+        newUser.skill.length === 1
           ? newUser.skill
           : `${newUser.skill[0]}, ${newUser.skill[1]}`
       }`,
@@ -115,7 +115,7 @@ function UserForm(props) {
               </label>
               {errors.gender && (
                 <p className="text-danger text-start">
-                  {errors.gender && "*Gender is a required field"}
+                  {errors.gender && "*Skill is a required field"}
                 </p>
               )}
               <div>
