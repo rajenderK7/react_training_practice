@@ -1,0 +1,31 @@
+.user-form {
+  background-color: whitesmoke;
+  margin: auto;
+  margin-top: 2rem;
+  max-width: 600px;
+  border: 1px solid grey;
+  border-radius: 12px;
+  box-shadow: 3px 3px 7px black;
+}
+
+.form-field {
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.user-form label {
+  display: block;
+  text-align: start;
+  margin: auto;
+}
+
+/* .user-form input {
+  display: block;
+  width: 100%;
+} */
+
+.radio-input {
+  display: inline;
+}

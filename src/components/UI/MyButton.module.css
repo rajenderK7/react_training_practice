@@ -1,0 +1,11 @@
+.my-button {
+  color: black;
+  font-weight: 600;
+  padding: 4px;
+  border: none;
+  width: 100px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #00d2ff, #3a7bd5);
+  margin-top: 0px;
+  margin-bottom: 1rem;
+}
