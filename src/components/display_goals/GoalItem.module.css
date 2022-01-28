@@ -10,3 +10,8 @@
 .goalContainer {
   background-color: cadetblue;
 }
+
+li {
+  -webkit-padding-start: 0px;
+  margin: auto;
+}
