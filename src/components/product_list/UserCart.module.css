@@ -1,0 +1,24 @@
+.user-cart {
+  max-width: 700px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+  border-radius: 12px;
+  border: 1px solid #ced4da;
+  text-overflow: ellipsis;
+}
