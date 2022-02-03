@@ -1,9 +1,9 @@
 import styles from "./BuyNow.module.css";
 
-function BuyNow() {
+function BuyNow(props) {
   return (
     <div>
-      <button className={styles["buy-now"]}>Buy Now</button>
+      <button className={styles["buy-now"]}>{props.children}</button>
     </div>
   );
 }

@@ -13,7 +13,7 @@ const DisplayCard = (props) => {
           category={props.category}
           rating={props.rating}
         ></Price>
-        <BuyNow></BuyNow>
+        <BuyNow>Buy Now</BuyNow>
       </div>
     </div>
   );
