@@ -1,9 +1,29 @@
 {
   "users": [
     {
-      "id": 1,
-      "username": "raner",
-      "email": "awrar"
+      "username": "rajender",
+      "email": "r7@gmail.com",
+      "id": 1
+    },
+    {
+      "username": "batman",
+      "email": "batman@gotham.us",
+      "id": 2
+    },
+    {
+      "username": "harley",
+      "email": "harley@gotham.com",
+      "id": 3
+    },
+    {
+      "username": "kylie",
+      "email": "kylile@pro.com",
+      "id": 4
+    },
+    {
+      "username": "christian Bale",
+      "email": "christian@bale.com",
+      "id": 5
     }
   ]
 }

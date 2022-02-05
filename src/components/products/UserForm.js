@@ -26,7 +26,7 @@ const UserForm = () => {
   };
 
   const addUser = async (user) => {
-    await axios.post("http://localhost:4000/users", user);
+    let res = await axios.post("http://localhost:4000/users", user);
   };
 
   return (

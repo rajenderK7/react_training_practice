@@ -11,16 +11,16 @@ const Users = () => {
   }, [users]);
 
   const updateUsers = async () => {
-    const response = axios.get("http://localhost:4000/users");
+    const response = await axios.get("http://localhost:4000/users");
     const userData = response.data;
     // console.log(userData);
-    setUsers(userData);
+    setUsers([...userData]);
   };
 
   return (
     <div>
       <UserForm></UserForm>
-      <UsersList users={users}></UsersList>
+      <UsersList users={users} />
     </div>
   );
 };
